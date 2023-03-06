@@ -11,10 +11,15 @@ export default function SignIn() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
+      <View style = {styles.imageContainer}>
+        
+      </View>
     </View>
-
-      
     
+
+
+     
+
 
     
   );
