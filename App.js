@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import Logo from './components/Logo'
 import React, { useState } from 'react';
+import { StackActions } from '@react-navigation/native';
+
 
 export default function App() {
 
@@ -16,11 +18,12 @@ export default function App() {
         height = {200}
       />
       <StatusBar style="auto" />
+      <Button 
+        title='Go to Third Screen'
+        onPress={() => navigation.push("SignUp")}
+      />
     </View>
-
-      
-    
-
+     
     
   );
 }
