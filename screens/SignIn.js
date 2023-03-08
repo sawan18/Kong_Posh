@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import Logo from './components/Logo'
 import React, { useState } from 'react';
 
 export default function SignIn() {
