@@ -4,7 +4,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import Logo from './components/Logo'
 import Button from './components/Button'
 import { StackActions } from '@react-navigation/native';
-import {SignUp} from './screens/SignUp'
+import {SignIn} from './screens/SignIn'
 
 
 export default function App() {
