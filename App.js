@@ -4,6 +4,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import Logo from './components/Logo'
 import Button from './components/Button'
 import { NavigationContainer } from "@react-navigation/native";
+import {createAppContainer} from 'react-navigation'; 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import {SignIn} from './screens/SignIn'
 import {SignUp} from './screens/SignUp'
