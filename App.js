@@ -7,7 +7,7 @@ import { StackActions } from '@react-navigation/native';
 import {SignIn} from './screens/SignIn'
 
 
-export default function App() {
+export default function App({navigation}) {
 
   // const [email, setEmail] = useState('');
   // const [password, setPassword] = useState('');
@@ -22,7 +22,7 @@ export default function App() {
       <StatusBar style="auto" /> 
      <Button 
         title='Go to Third Screen'
-        onPress={() => navigation.push("SignUp")}
+        onPress={() => navigation.navigate("SignUp")}
       />
     </View>
      
