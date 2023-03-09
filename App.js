@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import Logo from './components/Logo'
-import Button from './components/Button'
-import { StackActions } from '@react-navigation/native';
-import {SignUp} from './screens/SignUp'
+import React, { useState } from 'react';
+
+
 
 
 export default function App() {
 
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <View style={styles.container}>
@@ -19,10 +18,10 @@ export default function App() {
         width = {200}
         height = {200}
       />
-      <StatusBar style="auto" /> 
-     <Button 
-        title='Go to Third Screen'
+      <StatusBar style="auto" />
+      <Button 
         onPress={() => navigation.push("SignUp")}
+        title='Go to Third Screen'
       />
     </View>
      
@@ -35,6 +34,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-
+    justifyContent: 'center',
   },
 });

@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
+import Logo from './components/Logo'
 import React, { useState } from 'react';
 
 export default function SignIn() {
@@ -11,7 +12,8 @@ export default function SignIn() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <View style = {styles.imageContainer}>
-        
+        <Image source = {require('./google.png')} 
+         style = {styles.tinyLogo}/>
       </View>
     </View>
     
@@ -31,4 +33,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  imageContainer: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center'
+  }
 });
