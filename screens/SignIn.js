@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import Logo from './components/Logo'
+import Logo from '../assets/google.png'
 import React, { useState } from 'react';
+
 
 export default function SignIn() {
 
@@ -12,8 +13,8 @@ export default function SignIn() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <View style = {styles.imageContainer}>
-        <Image source = {require('./google.png')} 
-         style = {styles.tinyLogo}/>
+        <Image source = {require('../assets/google.png')} 
+         />
       </View>
     </View>
     

@@ -8,10 +8,8 @@ import {createAppContainer} from 'react-navigation';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import {SignIn} from './screens/SignIn'
 import {SignUp} from './screens/SignUp'
-import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
+const Stack = createNativeStackNavigator();
 
 export default function App() {
 
@@ -32,7 +30,7 @@ export default function App() {
               title='Go to Third Screen'
               onPress={() => this.props.navigation.navigate("SignUp")}
             />
-            <NavigationContainer>
+            
             <Stack.Navigator>
               <Stack.Screen 
                 name="SignIn"
@@ -45,17 +43,17 @@ export default function App() {
               />
               <Stack.Screen 
                 name="Third"
-                component={ThirdScreen}
+                component={SignIn}
                 //options={{headerShown: false}}
               />
-              <Stack.Screen
+              {/* <Stack.Screen
                 name="Home"
-                component={HomeScreen}
+                component={Home}
                 options={{title: 'Welcome'}}
-              />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
+              /> */}
+       
             </Stack.Navigator>
-          </NavigationContainer>
+          
           </View>
     </NavigationContainer>
     
