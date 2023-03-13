@@ -8,7 +8,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import {createAppContainer} from 'react-navigation'; 
 import {SignIn} from './screens/SignIn'
 import {SignUp} from './screens/SignUp'
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
 
 
 export default function App() {
@@ -27,8 +27,8 @@ export default function App() {
             />
             <StatusBar style="auto" /> 
           <Button 
-              title='Go to Third Screen'
-              onPress={() => this.props.navigation.navigate("SignUp")}
+              title='Next Page'
+              onPress={() => props.navigation.navigate("SignUp")}
             />
             
           </View>
