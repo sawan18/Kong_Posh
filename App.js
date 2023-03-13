@@ -11,7 +11,7 @@ import {SignUp} from './screens/SignUp'
 
 
 
-export default function App() {
+export default function App( navigation) {
 
   // const [email, setEmail] = useState('');
   // const [password, setPassword] = useState('');
@@ -26,10 +26,7 @@ export default function App() {
               height = {200}
             />
             <StatusBar style="auto" /> 
-          <Button 
-              title='Next Page'
-              onPress={() => props.navigation.navigate("SignUp")}
-            />
+         
             
           </View>
     
