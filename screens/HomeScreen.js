@@ -11,6 +11,9 @@ export default function HomeScreen({navigation}) {
      
   
         <View style={styles.container}>
+          <Text
+            This is home page
+          />
               <Logo
                 path={require("./assets/logo.png")}
                 width = {200}

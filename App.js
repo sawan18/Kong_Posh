@@ -10,9 +10,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {SignIn} from './screens/SignIn'
 import {SignUp} from './screens/SignUp'
 
+const Stack = createNativeStackNavigator();
 
-
-export default function App( navigation) {
+export default function App( {navigation}) {
 
   // const [email, setEmail] = useState('');
   // const [password, setPassword] = useState('');
@@ -21,7 +21,7 @@ export default function App( navigation) {
   
 
    <NavigationContainer>
-    <StackActions.Navigator>
+    <Stack.Navigator>
       <Stack.Screen>
         name="Home"
         component={HomeScreen}
@@ -35,7 +35,7 @@ export default function App( navigation) {
         name="SignIn"
         component={SignIn}
       </Stack.Screen>
-    </StackActions.Navigator>
+    </Stack.Navigator>
     </NavigationContainer>
     
     

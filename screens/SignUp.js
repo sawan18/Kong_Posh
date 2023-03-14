@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text } from 'react-native';
 import Button from "../components/Button";
-export default function SignUp({navigation}) {
+export default function SignUp() {
 
     // const [email, setEmail] = useState('');
     // const [password, setPassword] = useState('');
