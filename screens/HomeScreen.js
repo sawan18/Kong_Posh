@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text } from 'react-native';
-export default function App() {
+import Button from '../components/Button';
+export default function HomeScreen({navigation}) {
 
     // const [email, setEmail] = useState('');
     // const [password, setPassword] = useState('');
@@ -15,6 +16,15 @@ export default function App() {
                 width = {200}
                 height = {200}
               />
+              <Button
+                title = "Press to access existing account"
+                onPress = {() => navigation.navigate("SignIn")}
+              />
+              <Button
+                title = "Press to make new account"
+                onPress={() => navigation.navigate("SignUp")}
+              />
+               
               <StatusBar style="auto" /> 
            
              

@@ -10,7 +10,6 @@ export default function SignUp({navigation}) {
   
     return (
      
-  
         <View style={styles.container}>
               <Logo
                 path={require("../assets/logo.png")}
@@ -18,10 +17,7 @@ export default function SignUp({navigation}) {
                 height = {200}
               />
               <StatusBar style="auto" /> 
-              <Button
-                title = "Go to make new account"
-                onPress = {() => navigation.navigate("")}
-              />
+             
              
           </View>
       
